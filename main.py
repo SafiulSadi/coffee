@@ -1,4 +1,4 @@
-# TODO 2. check resources sufficient to make drink order
+# check resources sufficient to make drink order
 MENU = {
     "espresso": {
         "ingredients": {
@@ -30,8 +30,8 @@ resources = {
     "milk": 200,
     "coffee": 100,
 }
-print(resources["water"])
-# todo 1: prompt the user by asking "What would you like? (espresso/latte/cappuccino): "
+# print(resources["water"])
+# prompt the user by asking "What would you like? (espresso/latte/cappuccino): "
 # state variables
 run = True
 resources["money"] = 0
@@ -80,9 +80,9 @@ def check_resources(order):
         print(f'{order["milk"]} this is important')
         return False
     return True
-# todo 2: make it repeate.
+#  make it repeat.
 while run == True:
-    # todo 3: print report
+    # print report
     print(f"Water: {resources['water']}")
     print(f"Milk: {resources['milk']}")
     print(f"Coffee: {resources['coffee']}")
